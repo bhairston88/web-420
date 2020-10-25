@@ -1,3 +1,19 @@
+/*
+========================================
+; Title: app.js
+; Author: Professor Krasso
+; Date: 25 October 2020
+; Modified by: Brooklyn Hairston
+; Description: Demonstrates an API Gateway
+;========================================
+*/
+
+//header
+const header = require("../hairston-header")
+
+console.log(header.display('Brooklyn','Hairston','app.js'))
+
+//require statements
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -7,6 +23,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
 var indexRouter = require('./routes/index');
+var apiCatalog = require("./routes/api-catalog");
 
 
 var app = express();
@@ -36,6 +53,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use("/api", apiCatalog);
 
 
 // catch 404 and forward to error handler
