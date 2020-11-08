@@ -4,14 +4,14 @@
 ; Author: Professor Krasso
 ; Date: 25 October 2020
 ; Modified by: Brooklyn Hairston
-; Description: Demonstrates an API Gateway
+; Description: Demonstrates an API set up
 ;========================================
 */
 
 //header
-const header = require("../hairston-header")
+//const header = require("../hairston-header")
 
-console.log(header.display('Brooklyn','Hairston','app.js'))
+//console.log(header.display('Brooklyn','Hairston','app.js'))
 
 //require statements
 var createError = require('http-errors');

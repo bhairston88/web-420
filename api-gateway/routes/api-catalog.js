@@ -1,3 +1,13 @@
+/*
+========================================
+; Title: api-catalog.js
+; Author: Professor Krasso
+; Date: 8 November 2020
+; Modified by: Brooklyn Hairston
+; Description: Routes for api gateway
+;========================================
+*/
+
 //API Routes
 
 var express = require("express");
