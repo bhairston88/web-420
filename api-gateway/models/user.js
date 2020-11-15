@@ -24,7 +24,7 @@ var userSchema = new mongoose.Schema({
     email: String
 });
 
-module.exports = mongoose.model("User", userSchema);
+const User = module.exports = mongoose.model("User", userSchema);
 
 //add new users to the database
 module.exports.add = (user, callback) => {
