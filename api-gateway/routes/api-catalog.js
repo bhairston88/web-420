@@ -21,3 +21,9 @@ router.post("/auth/register", auth_controller.user_register);
 router.get("/auth/token", auth_controller.user_token);
 
 module.exports = router;
+
+//Allow user login requests
+router.post("/auth/login", auth_controller.user_login);
+
+//Allow user logout requests
+router.get("/auth/logout", auth_controller.user_logout);
