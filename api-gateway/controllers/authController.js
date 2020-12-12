@@ -18,7 +18,6 @@ var User = require("../models/user");
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 var config = require("../config");
-const { restart } = require("nodemon");
 
 //register a new user on POST
 
